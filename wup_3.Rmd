@@ -78,8 +78,8 @@ tukey_result <- TukeyHSD(anova_result)
 print(tukey_result)
 
 ```
-
-
 ## Conclusions
+
+It seems as though the front back and the middle back seems to both have a negative result under difference, lower and upper. At the same time the middle front is positive for difference, and upper, but negative lower.
 
 
