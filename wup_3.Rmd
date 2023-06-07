@@ -50,6 +50,15 @@ The people in the front are drinking a lot more that the people in the middle an
 
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+```{r}
+plot(TukeyHSD(model1))
+```
+
+
 ## Conclusions
 
 
