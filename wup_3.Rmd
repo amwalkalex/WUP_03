@@ -24,6 +24,20 @@ mutate(across(where(is.character), as.factor))
 ## Our Goal is to answer this question Is there a difference between the alcohol consumed between the row
 ## you choose to sit in??
 
+
+```{r}
+# Load the ggplot2 library
+library(ggplot2)
+
+# Create the box plot
+ggplot(davisdata, aes(x = Seat, y = alcohol)) +
+  geom_boxplot() +
+  labs(title = "Box Plot of Alcohol by Seat")
+
+```
+
+
+
 ## Now with ggplot - first select the basic data
 
 ```{r}
